@@ -50,7 +50,6 @@ namespace ProductService.Controllers
         public async Task<ActionResult<SubCategoryDto>> CreateSubCategory(SubCategoryCreateDto subCategoryCreateDto)
         {
             var subCategory = _mapper.Map<SubCategory>(subCategoryCreateDto);
-            subCategory.Id = Guid.NewGuid();
             _entityService.SetCreatedProperties(subCategory, subCategory.CreatedBy);
 
             _context.SubCategories.Add(subCategory);

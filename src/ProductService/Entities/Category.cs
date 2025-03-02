@@ -7,7 +7,7 @@ namespace ProductService.Entities
     [Table("Categories")]
     public class Category : BaseEntity
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; }
         public string Name { get; set; }
         public ICollection<SubCategory> SubCategories { get; set; } = new List<SubCategory>();
     }

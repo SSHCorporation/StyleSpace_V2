@@ -122,3 +122,4 @@ D:\UdemyCoursesLearning\MicroserviceNetNextJs\StyleSpace\src\ProductService\bin\
 D:\UdemyCoursesLearning\MicroserviceNetNextJs\StyleSpace\src\ProductService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\UdemyCoursesLearning\MicroserviceNetNextJs\StyleSpace\src\ProductService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\UdemyCoursesLearning\MicroserviceNetNextJs\StyleSpace\src\ProductService\obj\Debug\net9.0\ProductService.MvcApplicationPartsAssemblyInfo.cs
+D:\UdemyCoursesLearning\MicroserviceNetNextJs\StyleSpace\src\ProductService\obj\Debug\net9.0\ProductService.sourcelink.json

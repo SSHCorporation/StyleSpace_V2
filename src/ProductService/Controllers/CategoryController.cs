@@ -50,7 +50,6 @@ namespace ProductService.Controllers
         public async Task<ActionResult<CategoryDto>> CreateCategory(CategoryCreateDto categoryCreateDto)
         {
             var category = _mapper.Map<Category>(categoryCreateDto);
-            category.Id = Guid.NewGuid();
             _entityService.SetCreatedProperties(category, category.CreatedBy);
 
             _context.Categories.Add(category);

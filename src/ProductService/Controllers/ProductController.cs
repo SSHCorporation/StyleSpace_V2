@@ -5,6 +5,10 @@ using ProductService.EntityDTOs.Product;
 using ProductService.Services;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ProductService.Controllers
 {
@@ -54,7 +58,6 @@ namespace ProductService.Controllers
         public async Task<ActionResult<ProductDto>> CreateProduct(ProductCreateDto productCreateDto)
         {
             var product = _mapper.Map<Product>(productCreateDto);
-            product.Id = Guid.NewGuid();
             _entityService.SetCreatedProperties(product, product.CreatedBy);
 
             // Add SubCategories

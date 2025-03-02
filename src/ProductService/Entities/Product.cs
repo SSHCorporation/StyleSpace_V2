@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProductService.Entities
@@ -7,7 +8,8 @@ namespace ProductService.Entities
     [Table("Products")]
     public class Product : BaseEntity
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; }
+
         public string Name { get; set; }
         public string Description { get; set; }
 
