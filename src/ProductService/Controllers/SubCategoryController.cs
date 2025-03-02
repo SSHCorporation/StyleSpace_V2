@@ -69,8 +69,11 @@ namespace ProductService.Controllers
                 return NotFound();
             }
 
-            _mapper.Map(subCategoryUpdateDto, subCategory);
-            _entityService.SetUpdatedProperties(subCategory, subCategory.UpdatedBy);
+            // Manually update each property if it exists in the DTO
+            subCategory.Name = !string.IsNullOrEmpty(subCategoryUpdateDto.Name) ? subCategoryUpdateDto.Name : subCategory.Name;
+            subCategory.CategoryId = subCategoryUpdateDto.CategoryId.HasValue ? subCategoryUpdateDto.CategoryId.Value : subCategory.CategoryId;
+
+            _entityService.SetUpdatedProperties(subCategory, subCategoryUpdateDto.UpdatedBy);
 
             _context.Entry(subCategory).State = EntityState.Modified;
             await _context.SaveChangesAsync();

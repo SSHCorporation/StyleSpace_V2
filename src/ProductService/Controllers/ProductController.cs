@@ -89,17 +89,27 @@ namespace ProductService.Controllers
                 return NotFound();
             }
 
-            _mapper.Map(productUpdateDto, product);
-            _entityService.SetUpdatedProperties(product, product.UpdatedBy);
+            // Manually update each property using ternary operator
+            product.Name = !string.IsNullOrEmpty(productUpdateDto.Name) ? productUpdateDto.Name : product.Name;
+            product.Description = !string.IsNullOrEmpty(productUpdateDto.Description) ? productUpdateDto.Description : product.Description;
+            product.Cost = productUpdateDto.Cost.HasValue ? productUpdateDto.Cost.Value : product.Cost;
+            product.Price = productUpdateDto.Price.HasValue ? productUpdateDto.Price.Value : product.Price;
+            product.CategoryId = productUpdateDto.CategoryId.HasValue ? productUpdateDto.CategoryId.Value : product.CategoryId;
+            product.ImageUrl = !string.IsNullOrEmpty(productUpdateDto.ImageUrl) ? productUpdateDto.ImageUrl : product.ImageUrl;
+
+            _entityService.SetUpdatedProperties(product, productUpdateDto.UpdatedBy);
 
             // Update SubCategories
             product.SubCategories.Clear();
-            var subCategories = await _context.SubCategories
-                .Where(sc => productUpdateDto.SubCategoryIds.Contains(sc.Id))
-                .ToListAsync();
-            foreach (var subCategory in subCategories)
+            if (productUpdateDto.SubCategoryIds != null && productUpdateDto.SubCategoryIds.Any())
             {
-                product.SubCategories.Add(subCategory);
+                var subCategories = await _context.SubCategories
+                    .Where(sc => productUpdateDto.SubCategoryIds.Contains(sc.Id))
+                    .ToListAsync();
+                foreach (var subCategory in subCategories)
+                {
+                    product.SubCategories.Add(subCategory);
+                }
             }
 
             _context.Entry(product).Collection(p => p.SubCategories).IsModified = true;
