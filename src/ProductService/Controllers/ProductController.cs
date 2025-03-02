@@ -102,6 +102,7 @@ namespace ProductService.Controllers
                 product.SubCategories.Add(subCategory);
             }
 
+            _context.Entry(product).Collection(p => p.SubCategories).IsModified = true;
             _context.Entry(product).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
