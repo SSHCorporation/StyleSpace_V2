@@ -3240,30 +3240,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Himanshu\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rashm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UdemyCoursesLearning\\MicroserviceNetNextJs\\StyleSpace\\src\\ProductService\\ProductService.csproj",
+      "projectUniqueName": "C:\\himanshu\\StyleSpaceV2\\StyleSpace_V2\\src\\ProductService\\ProductService.csproj",
       "projectName": "ProductService",
-      "projectPath": "D:\\UdemyCoursesLearning\\MicroserviceNetNextJs\\StyleSpace\\src\\ProductService\\ProductService.csproj",
-      "packagesPath": "C:\\Users\\Himanshu\\.nuget\\packages\\",
-      "outputPath": "D:\\UdemyCoursesLearning\\MicroserviceNetNextJs\\StyleSpace\\src\\ProductService\\obj\\",
+      "projectPath": "C:\\himanshu\\StyleSpaceV2\\StyleSpace_V2\\src\\ProductService\\ProductService.csproj",
+      "packagesPath": "C:\\Users\\rashm\\.nuget\\packages\\",
+      "outputPath": "C:\\himanshu\\StyleSpaceV2\\StyleSpace_V2\\src\\ProductService\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Himanshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\rashm\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
