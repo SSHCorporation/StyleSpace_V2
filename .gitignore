@@ -1,4 +1,4 @@
-/src/ProductService/bin/*
-/src/ProductService/obj/*
+/src/ProductService/bin/*.*
+/src/ProductService/obj/*.*
 /src/ProductService/Properties/launchSettings.json
 *dll

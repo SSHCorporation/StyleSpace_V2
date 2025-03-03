@@ -1,0 +1,66 @@
+[
+    {
+      "id": "01955720-a9d8-7d10-a1da-ffa309f43265",
+      "name": "Product 1",
+      "description": null,
+      "cost": 0,
+      "price": 100,
+      "categoryId": "01955720-a9fb-724d-a23e-290bf90b1389",
+      "subCategoryIds": [
+        "01955720-aa09-7e45-9281-b8d49f6ba8d5",
+        "01955720-aa16-79b0-91bb-09b81cb45a1d"
+      ],
+      "imageUrl": null,
+      "createdBy": null,
+      "createdOn": "2025-03-02T13:51:53.286301Z",
+      "updatedBy": null,
+      "updatedOn": "2025-03-02T13:51:53.286301Z",
+      "subCategories": [
+        {
+          "id": "01955720-aa09-7e45-9281-b8d49f6ba8d5",
+          "name": "SubCategory 1",
+          "categoryId": "01955720-a9fb-724d-a23e-290bf90b1389",
+          "createdBy": null,
+          "createdOn": "2025-03-02T13:51:53.286254Z",
+          "updatedBy": null,
+          "updatedOn": "2025-03-02T13:51:53.286254Z"
+        },
+        {
+          "id": "01955720-aa16-79b0-91bb-09b81cb45a1d",
+          "name": "SubCategory 3",
+          "categoryId": "01955720-a9fb-724d-a23e-290bf90b1389",
+          "createdBy": null,
+          "createdOn": "2025-03-02T13:51:53.286282Z",
+          "updatedBy": null,
+          "updatedOn": "2025-03-02T13:51:53.286282Z"
+        }
+      ]
+    },
+    {
+      "id": "01955720-aa1f-7200-b641-25123d6ae4c3",
+      "name": "Product 2",
+      "description": null,
+      "cost": 0,
+      "price": 200,
+      "categoryId": "01955720-aa20-718f-9238-b2e5763eec39",
+      "subCategoryIds": [
+        "01955720-aa20-7f0a-aaf3-81256eb6010c"
+      ],
+      "imageUrl": null,
+      "createdBy": null,
+      "createdOn": "2025-03-02T13:51:53.286363Z",
+      "updatedBy": null,
+      "updatedOn": "2025-03-02T13:51:53.286363Z",
+      "subCategories": [
+        {
+          "id": "01955720-aa20-7f0a-aaf3-81256eb6010c",
+          "name": "SubCategory 2",
+          "categoryId": "01955720-aa20-718f-9238-b2e5763eec39",
+          "createdBy": null,
+          "createdOn": "2025-03-02T13:51:53.286282Z",
+          "updatedBy": null,
+          "updatedOn": "2025-03-02T13:51:53.286282Z"
+        }
+      ]
+    }
+  ]
