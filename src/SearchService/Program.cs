@@ -24,12 +24,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-await DB.InitAsync("SearchDB", MongoClientSettings
-    .FromConnectionString(builder.Configuration.GetConnectionString("MongoDBConnection")));
+try
+{
+    await DbInitializer.InitDB(app);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
-await DB.Index<Item>()
-    .Key(a => a.Name, KeyType.Text)
-    .Key(a => a.Description, KeyType.Text)
-    .Key(a => a.CreatedBy, KeyType.Text)
-    .CreateAsync();
 app.Run();

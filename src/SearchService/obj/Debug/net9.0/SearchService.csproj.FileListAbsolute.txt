@@ -82,3 +82,4 @@ C:\himanshu\StyleSpaceV2\StyleSpace_V2\src\SearchService\obj\Debug\net9.0\Search
 C:\himanshu\StyleSpaceV2\StyleSpace_V2\src\SearchService\obj\Debug\net9.0\refint\SearchService.dll
 C:\himanshu\StyleSpaceV2\StyleSpace_V2\src\SearchService\obj\Debug\net9.0\SearchService.genruntimeconfig.cache
 C:\himanshu\StyleSpaceV2\StyleSpace_V2\src\SearchService\obj\Debug\net9.0\ref\SearchService.dll
+C:\himanshu\StyleSpaceV2\StyleSpace_V2\src\SearchService\bin\Debug\net9.0\Data\products.json
